@@ -8,8 +8,7 @@ const { errorHandler } = require("./middleware/errorMiddleware");
 const app = express();
 app.use(
   cors({
-    origin: "https://nasa-front-pink.vercel.app", // Your frontend URL
-    methods: ["GET", "POST"], // Allowed HTTP methods
+    origin: "https://nasa-front-pink.vercel.app",
   })
 );
 
