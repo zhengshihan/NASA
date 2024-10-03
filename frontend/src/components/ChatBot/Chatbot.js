@@ -74,7 +74,9 @@ const Chatbot = () => {
           >
             ×
           </button>
-          <h2 style={{ fontSize: "16px", margin: "0 0 10px" }}>Chatbot</h2>
+          <h2 style={{ fontSize: "16px", margin: "0 0 10px", color: "black" }}>
+            Chatbot
+          </h2>
           <div className={styles.messages}>
             {messages.map((msg, index) => (
               <div
