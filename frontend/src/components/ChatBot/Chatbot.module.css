@@ -1,0 +1,100 @@
+.chatbotContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  height: 400px; /* Initial height */
+  border: none; /* No border for a cleaner look */
+  border-radius: 10px; /* More rounded corners */
+  background-color: #fff; /* White background for clarity */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Softer shadow for depth */
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent overflow */
+}
+
+@media (max-width: 768px) {
+  .chatbotContainer {
+    width: 90%; 
+    height: 50%; 
+    bottom: 10px;
+    right: 5%; 
+    border-radius: 15px; /* Slightly larger rounding on smaller screens */
+  }
+}
+
+.messages {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto; /* Scrollable area for messages */
+  background-color: #f9f9f9; /* Light gray background */
+  margin-bottom: 10px;
+  border-radius: 0 0 10px 10px; /* Rounded corners at the bottom */
+}
+
+.message {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  max-width: 80%; /* Limit message width */
+}
+
+.messageUser {
+  background-color: #d1e7dd; /* User message background */
+  align-self: flex-end; /* Align to the right */
+}
+
+.messageBot {
+  background-color: #f8d7da; /* Bot message background */
+  align-self: flex-start; /* Align to the left */
+}
+
+.inputContainer {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc; /* Subtle border on top */
+}
+
+.inputField {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc; /* Standard border */
+  border-radius: 5px;
+  resize: none; /* Prevent resizing */
+  overflow-y: auto;
+  min-height: 60px; /* Minimum height */
+  max-height: 150px; /* Maximum height */
+  color: black;
+}
+
+.sendButton {
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.sendButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none; /* No background */
+  border: none; /* No border */
+  font-size: 18px; /* Larger font for the close button */
+  cursor: pointer; /* Pointer cursor */
+  color: #ff0000; /* Red color for visibility */
+}
+
+.closeButton:hover {
+  color: #cc0000; /* Darker red on hover */
+}

@@ -1,0 +1,35 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #ffffff; /* White background for the container */
+  color: #000000; /* Black text for contrast */
+}
+
+.card {
+  background-color: #f0f0f0; /* Light gray card background */
+  border: 1px solid #00a8e0; /* Light blue border */
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 16px; /* Added padding to the card */
+}
+
+.title {
+  font-weight: bold;
+  color: #00a8e0; /* Bright blue for the title */
+  margin-bottom: 16px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.explanation {
+  color: #333333; /* Dark gray for better readability */
+  line-height: 1.6; /* Improved line spacing */
+  font-size: 1rem; /* Set font size */
+  font-weight: 400; /* Regular font weight */
+}
