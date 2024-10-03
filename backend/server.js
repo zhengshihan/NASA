@@ -6,7 +6,11 @@ require("dotenv").config();
 const { errorHandler } = require("./middleware/errorMiddleware");
 
 const app = express();
-app.use(cors());
+aapp.use(
+  cors({
+    origin: "https://nasa-front-pink.vercel.app", // Allow only your frontend origin
+  })
+);
 
 const nasaRoutes = require("./routes/nasaRoutes");
 
