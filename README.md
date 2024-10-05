@@ -37,4 +37,5 @@ This is the Astronomy PictureD Explorer app, designed to allow users to explore 
 
 ## Demo
 
-Check out the live demo at: [https://nasa-front-pink.vercel.app/](#)
+Check out the live demo [here](https://nasa-front-pink.vercel.app/).
+
